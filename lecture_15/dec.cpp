@@ -6,8 +6,8 @@ int main() {
     int bn = 0;
     while (n>0)
     {
-        int m = n%2;
-        bn= bn*10+m;
+        int min = n%2;
+        bn= bn*10+min;
         n=n/2;
     }
     cout<<bn<<endl;
