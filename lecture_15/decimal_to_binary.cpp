@@ -1,17 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main() {
     int n;
+    cout << "Enter decimal number: ";
     cin >> n;
-    int bn = 0;
-    while (n>0)
-    {
-        int m = n%2;
-        bn= bn*10+m;
-        n=n/2;
+
+    int binary[32];
+    int i = 0;
+
+    while (n > 0) {
+        binary[i] = n % 2;
+        n = n / 2;
+        i++;
     }
-    cout<<bn<<endl;
-    
-    
+
+    cout << "Binary equivalent: ";
+    for (int j = i - 1; j >= 0; j--) {
+        cout << binary[j];
+    }
+
     return 0;
 }
