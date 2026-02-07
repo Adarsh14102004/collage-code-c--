@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int n;
-    cout << "Enter odd number: ";
+    cout << "Enter odd num: ";
     cin >> n;
 
     for(int i = 0; i < n; i++) {
